@@ -1,0 +1,8 @@
+Which model has a lower loss?
+The Fear and Greed model has a lower loss.
+
+Which model tracks the actual values better over time?
+The Fear and Greed model tracks the actual values better over time compared to the closing price predictor.
+
+Which window size works best for the model?
+The larger the rolling window size the better the model works (unless rolling window is too large for the dataset).
