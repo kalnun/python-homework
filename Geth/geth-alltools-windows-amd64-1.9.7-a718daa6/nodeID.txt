@@ -1,16 +1,18 @@
 NODE 1
 public
-0xfac386f151a11d1e6dad71a10aec207208ed7389
+5760e575F66172b7f5a4DEc9f1dA6BD54A81E16F
 
 private
 0x1a3c5b77a2b57ae8abb802e8df1e34071104dd84e10e3f86a6df2c9bb3b0d18a
 
 NODE 2
 public
-0x510f4a9ada94e78065ab098762ae85707b4a64aa
+eb03618663C310A0484E6b338E8Cf133Ee872924
 
 private
 0x83a1618c7bb5e8bb29bdd6a0adf142bd551ef9a0437566db5a87e2c118b01b3e
 
 START NODE 2
-geth --datadir node2 --port 30304 --rpc --bootnodes "enode://c655cc8d4723040479be18abbc81003f8eef9d8f81152e09eda3de251c1c276e72258cbd247023e4cc8ea831f5ef7538fd6ffea9045af016c870f116c1747684@127.0.0.1:30303" --ipcdisable
+geth --datadir node2 --port 30304 --rpc --bootnodes "enode://0a19d7930c9733fdcec00fbad5c2bf0267522ac01c968f8665cf15528e12967929dafec451f119cee3d6c1bd9d6430e1af8e022ccc316cc439008a1b9d2554a6@127.0.0.1:30303" --ipcdisable --mine --minerthread 1
+
+geth --datadir node2/ --syncmode 'full' --port 30312 --rpc --rpcaddr 'localhost' --rpcport 8502 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://3ec4fef2d726c2c01f16f0a0030f15dd5a81e274067af2b2157cafbf76aa79fa9c0be52c6664e80cc5b08162ede53279bd70ee10d024fe86613b0b09e1106c40@127.0.0.1:30310' --networkid 1515 --gasprice '0' --unlock '0x08a58f09194e403d02a1928a7bf78646cfc260b0' --mine
