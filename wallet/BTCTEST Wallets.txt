@@ -1,0 +1,15 @@
+Wallet 1
+address
+'mjjo7tng5nqdcFzpzDeamJo9Uv2h2ikcVD'
+public
+'02dba996c5e99b635e38cd3bb44a9f93aa93b3dc71aef426989805768c9762266f'
+private
+'cPjBAmPjbJnCp477C8dHaui8ovmBngo8fFsBjoiaeTRPjNJKkz2y'
+
+Wallet 2
+address
+'n2hsWvMMmU96Vhbbkj7YbrwjujXGVWxHsK'
+public
+'02a70493e20f1ab817cba5b0e33508852b77ebcb845181cb63f6a14a9799125b36'
+private
+'cPEY4P51yzq8ZGd2guENAdkhsMmg19NXftHmHZ9uZp7iN36Bud4p'

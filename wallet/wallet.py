@@ -6,9 +6,8 @@ from web3.eth import Account
 from dotenv import load_dotenv
 from constants import *
 
-from web3.middleware import geth_poa_middleware
+# from web3.auto.gethdev import w3
 
-web3.middleware_onion.inject(geth_poa_middleware, layer=0)
 
 
 load_dotenv()
@@ -16,7 +15,7 @@ load_dotenv()
 mnemonic = os.getenv('MNEMONIC', "history nice alarm flavor canvas share brass scale clerk board shift main place inhale access silent lend tumble wage bunker pencil own next phrase")
 
 def derive_wallets(mnemonic, coin, numderive):
-	command  = f'php ./hd-wallet-derive/hd-wallet-derive.php -g --format=json --mnemonic={mnemonic} --cols=path,address,privkey,pubkey --coin={coin} --numderive={numderive}'
+	command  = f'php ./hd-wallet-derive/hd-wallet-derive.php -g --format=json --coin={coin} --mnemonic={mnemonic} --cols=path,address,privkey,pubkey --numderive={numderive}'
 	p = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
 	output, err = p.communicate()
 	p_status = p.wait()
@@ -67,9 +66,10 @@ def sent_tx(coin, account, to, amount):
 		print('Coin not supported')
 		return None
 
+print('loading...')
+
 coins = {
+	'btc': derive_wallets(mnemonic, BTC, 3),
 	'eth': derive_wallets(mnemonic, ETH, 3),
 	'btc-test': derive_wallets(mnemonic, BTCTEST, 3)
 }
-
-print(coins)
