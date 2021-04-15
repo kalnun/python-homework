@@ -1,5 +1,8 @@
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.5.0;
 
+/// @author Kaleb Nunn
+/// @title Tiered Profit Splitter
 contract TieredProfitSplitter {
 
     address payable employee_one; 
