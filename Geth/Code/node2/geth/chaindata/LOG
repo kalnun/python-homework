@@ -332,3 +332,26 @@
 12:13:37.861952 table@remove removed @66
 12:13:38.074393 db@close closing
 12:13:38.074393 db@close done T·0s
+=============== Apr 15, 2021 (PDT) ===============
+12:41:22.652418 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:41:22.658376 version@stat F·[0 1] S·51KiB[0B 51KiB] Sc·[0.00 0.00]
+12:41:22.658376 db@open opening
+12:41:22.658376 journal@recovery F·1
+12:41:22.663376 journal@recovery recovering @77
+12:41:22.668377 memdb@flush created L0@80 N·1 S·217B "Las..der,v675":"Las..der,v675"
+12:41:22.672376 version@stat F·[1 1] S·51KiB[217B 51KiB] Sc·[0.25 0.00]
+12:41:22.678377 db@janitor F·5 G·1
+12:41:22.678377 db@janitor removing table-76
+12:41:22.678377 db@open done T·20.0007ms
+12:49:41.658495 db@close closing
+12:49:41.658495 db@close done T·0s
+=============== Apr 15, 2021 (PDT) ===============
+12:49:43.838563 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:49:43.838563 version@stat F·[1 1] S·51KiB[217B 51KiB] Sc·[0.25 0.00]
+12:49:43.838563 db@open opening
+12:49:43.838563 journal@recovery F·1
+12:49:43.842564 journal@recovery recovering @81
+12:49:43.843564 memdb@flush created L0@83 N·38 S·1KiB "HR\n..xXt,v701":"sec..\xdf}\xd9,v713"
+12:49:43.848563 version@stat F·[2 1] S·53KiB[2KiB 51KiB] Sc·[0.50 0.00]
+12:49:43.854565 db@janitor F·5 G·0
+12:49:43.854565 db@open done T·16.0017ms
