@@ -8,9 +8,9 @@
 
 ### Functions
 
-- balance()
+- **balance()**
   - Return the current balance of the contract.
-- deposit()
+- **deposit()**
   - Splits the amount of ether sent to the contract into three equal proportions and sends the proportions to the three predefined addresses. The remaining ether is sent to HR.
 
 ### Contract in Action
@@ -25,9 +25,9 @@
 
 ### Functions
 
-- balance()
+- **balance()**
   - Return the current balance of the contract.
-- deposit()
+- **deposit()**
   - Splits the amount of ether sent to the contract into three proportions (60%/25%/15%)  and sends the proportions to three addresses (ceo/cto/bob) and send the remainder back to the ceo.
 
 ### Contract in Action
@@ -42,11 +42,11 @@
 
 ### Functions
 
-- distribute()
+- **distribute()**
   - Distributes 250 shares annually for 4 years not exceeding 1000 shares in total. After disbursement the contract is locked for another year from the day of disbursement.
-- fastforward()
+- **fastforward()**
   - Advance the time of the contract 100 days into the future. This is to test the time constraints of the share disbursement schedule.
-- deactivate()
+- **deactivate()**
   - Render the contract invalid.
 
 ### Contract in Action
