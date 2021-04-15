@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.5.0;
 
-/// lvl 1: associate split
+/// lvl 2: associate split
 /// @author Kaleb Nunn
 /// @title Associate Profit Splitter
 contract AssociateProfitSplitter {
