@@ -1,6 +1,9 @@
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.5.0;
 
-// lvl 3: equity plan
+/// lvl 3: equity plan
+/// @author Kaleb Nunn
+/// @title Associate Profit Splitter
 contract DeferredEquityPlan {
     address human_resources;
 
