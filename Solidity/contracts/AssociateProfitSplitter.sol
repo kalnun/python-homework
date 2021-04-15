@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.5.0;
 
+/// lvl 1: associate split
 /// @author Kaleb Nunn
 /// @title Associate Profit Splitter
-// lvl 2: tiered split
 contract AssociateProfitSplitter {
     address payable employee_one; // ceo
     address payable employee_two; // cto
