@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.5.0;
 
+/// lvl 1: tiered plan
 /// @author Kaleb Nunn
 /// @title Tiered Profit Splitter
 contract TieredProfitSplitter {
